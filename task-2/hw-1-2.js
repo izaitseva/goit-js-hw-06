@@ -9,11 +9,15 @@ const ingredients = [
   "Condiments",
 ];
 
+const ulEl = document.querySelector("#ingredients");
+const array = [];
 
-const items = document.createElement("li");
-items.classList.add('item');
+ingredients.forEach(el => {
+  const item = document.createElement("li");
+  item.classList.add('item'); 
+  item.textContent = el;
 
-console.log(items.innerText);
+  array.push(item);
+});
 
-const liEl = item.querySelectorAll('li');
-console.log(liEl);
+ulEl.append(...array);

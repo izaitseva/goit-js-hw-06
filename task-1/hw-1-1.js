@@ -9,7 +9,7 @@ itemsEl.forEach((item)=> {
 
   const h2El = item.querySelector('h2');
   
-  console.log(`Category: ${h2El.innerText}`); 
+  console.log(`Category: ${h2El.textContent}`); 
   
   const liEl = item.querySelectorAll('li');
   
